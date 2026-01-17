@@ -1,0 +1,19 @@
+# frozen_string_literal: true
+
+# Removed test, development deps from source's Gemfile
+# nix-shell -p bundler bundix --run "bundle lock && bundix"
+
+source "https://rubygems.org"
+
+gem "irb"
+gem "logger"
+gem "money"
+gem "oj"
+gem "ox"
+gem "rack-cors"
+gem "rake"
+gem "roda"
+gem "rufus-scheduler"
+gem "sequel"
+gem "sqlite3"
+gem "unicorn"

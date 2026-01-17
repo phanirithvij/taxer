@@ -1,0 +1,23 @@
+From e4f011e157ba7bf98e52d67cf3c4185bfea0818a Mon Sep 17 00:00:00 2001
+From: phanirithvij <phanirithvij2000@gmail.com>
+Date: Sat, 17 Jan 2026 22:03:07 +0530
+Subject: [PATCH] change sqlite path
+
+Signed-off-by: phanirithvij <phanirithvij2000@gmail.com>
+---
+ lib/db.rb | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/lib/db.rb b/lib/db.rb
+index 9aed8cd..b51a63e 100644
+--- a/lib/db.rb
++++ b/lib/db.rb
+@@ -2,4 +2,4 @@
+ 
+ require "sequel"
+ 
+-Sequel.connect("sqlite://#{Dir.pwd}/db/frankfurter.sqlite3")
++Sequel.connect("sqlite://@dataDir@/db/frankfurter.sqlite3")
+-- 
+2.52.0
+
